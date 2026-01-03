@@ -1,69 +1,19 @@
-<p align="center">
-  <img src="assets/npe_psq_banner.png" width="80%" />
-</p>
+# NPE-PSQ-Framework v4.5 ⚛️
+## AION-CORE: Sistema de Controlo e Previsão de Disrupções em Tokamaks
 
-<h1 align="center">NPE-PSQ-Framework</h1>
+Este repositório contém o ecossistema **AION-CORE**, uma infraestrutura de "Digital Twin" e Inteligência Artificial desenvolvida para a monitorização e controlo em tempo real de reatores de fusão nuclear.
 
-<p align="center">
-  <b>Non-Perturbative Energy – Plasma Stability & Quantum-Inspired Control Framework</b><br>
-  Modular framework for plasma stability modeling, prediction and control.
-</p>
+### 🚀 Destaques do Projeto
+* **AION-CORE Kernel**: Controlador preditivo baseado em Redes Neurais.
+* **NPE-PSQ Physics Engine**: Simulador magnético de alta fidelidade (44 variáveis).
+* **Módulo de Injeção Forense**: Playback de dados reais (JET, DIII-D) para teste de hardware.
+* **GhostHunter Protocol**: Detecção de falhas com 93.3% de acurácia.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-active-success.svg"/>
-  <img src="https://img.shields.io/badge/domain-plasma%20physics-blue.svg"/>
-  <img src="https://img.shields.io/badge/control-predictive%20%26%20adaptive-purple.svg"/>
-  <img src="https://img.shields.io/badge/hardware-ready%20for%20FPGA-orange.svg"/>
-  <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg"/>
-</p>
+### 📂 Estrutura
+* `/core`: Motores de física e o núcleo do AION.
+* `/ai_models`: Modelos PyTorch (.pth).
+* `/forensics`: Scripts para injeção de datasets reais.
+* `/hardware`: Documentação para Edge AI.
 
----
-
-## 🔥 Overview
-
-The **NPE-PSQ-Framework** is a modular scientific framework designed to:
-
-- Model plasma behavior in tokamak-like systems  
-- Detect non-Gaussian precursors of instability  
-- Predict disruptive events before thermal quench  
-- Provide control-oriented outputs compatible with **real-time FPGA safety systems**
-
-It is designed to integrate seamlessly with:
-
-- **AEGIS** (Interlock & Safety Layer)
-- **TITAN** (Predictive Control Brain)
-- **AION / KRONOS** (Low-latency hardware execution)
-
----
-
-## 🎥 Simulation Preview
-
-<p align="center">
-  <img src="assets/cmod_titan_simulation.gif" width="90%" />
-</p>
-
-<p align="center">
-  <i>Forensic replay of Alcator C-Mod disruption with adaptive threshold detection.</i>
-</p>
-
----
-
-## 🧠 Core Concepts
-
-✔ Non-Gaussian energy detection (kurtosis, RMS, adaptive limits)  
-✔ Precursor identification (locked modes, phase coupling)  
-✔ Predictive safety logic (pre-disruption shutdown)  
-✔ Hardware-aware architecture (FPGA-friendly logic paths)
-
----
-
-## 🧱 Architecture
-
-<p align="center">
-  <img src="assets/architecture_diagram.png" width="85%" />
-</p>
-
-```text
-Sensors → Signal Intelligence → Statistical Core
-        → Prediction Engine → Control Decision
-        → Safety Interlock / FPGA / Actuators
+**Desenvolvido por:** Guilherme Brasil de Souza  
+**Status:** Em fase de validação de hardware (HIL).
